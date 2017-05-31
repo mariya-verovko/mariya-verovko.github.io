@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="app">
+    <div id="scrolling_data" ng-controller="ScrollController">
+        <div id="static_data">
+            <button id="menu"></button>
+            <div id="background_phone"></div>
+            <img id="logo_sticker" src="img/logo.png">
+        </div>  
+        <table id="data_table">
+             <tr id="page_1" class="city-page">
+                <td id="odessa_list" class="city-list">
+                    <div id="button_list_odessa" class="button-list">
+                        <p><img src="img/odessa/left_list/Odessa.png"></p>
+                        <img src="img/odessa/left_list/two_lines.png">
+                        <p ng-click="jumpToPage(2)"><img src="img/odessa/left_list/Kyiv.png"></p>
+                        <img src="img/odessa/left_list/line.png">
+                        <p ng-click="jumpToPage(3)"><img src="img/odessa/left_list/New_York.png"></p>
+                    </div>
+                </td>
+                <td id="odessa_phone" class="city-phone">
+                    <div id="odessa_stickers">
+                        <img id="jew-odessa-sticker" class="sticker" src="img/odessa/phone_stickers/jew-odessa.png">
+                        <img id="who-drowned-sticker" class="sticker" src="img/odessa/phone_stickers/who-drowned.png">
+                        <img id="seagulls-odessa-sticker" class="sticker" src="img/odessa/phone_stickers/seagulls-odessa.png">
+                        <img id="text-sticker" class="sticker" src="img/odessa/phone_stickers/text.png">
+                        <img id="seafront-odessa-sticker" class="sticker" src="img/odessa/phone_stickers/seafront-odessa.png">
+                    </div>
+                </td>
+                <td id="odessa_form" class="city-form">
+                    <img id="odessa_main_image" src="img/odessa/ob-odesse-1.png">
+                    <img id="odessa_icon" src="img/odessa/odessa-icon.png">
+                    <form id="odessa-form">
+                        <p id="odessa_head"><img src="img/odessa/odessa_form/Odessa Stickers.png"></p>
+                        <p id="odessa_text"><img src="img/odessa/odessa_form/Lorem ipsum dolor sit amet.png"></p>
+                        <button id="odessa-app-store" class="app-store-download-button"></button>
+                        <button id="odessa-telegram" class="telegram-download-button"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr id="page_2" class="city-page">
+                <td id="kyiv_list" class="city-list">
+                    <div id="button_list_kyiv" class="button-list">
+                        <p ng-click="jumpToPage(1)"><img src="img/kyiv/left_list/Odessa.png"></p>
+                        <img src="img/kyiv/left_list/down_line.png">
+                        <p><img src="img/kyiv/left_list/Kyiv.png"></p>
+                        <img src="img/kyiv/left_list/up_line.png">
+                        <p ng-click="jumpToPage(3)"><img src="img/kyiv/left_list/New_York.png"></p>
+                    </div>
+                </td>
+                <td id="kyiv_phone" class="city-phone">
+                    <div id="kyiv_stickers">
+                        <img id="snail-kiev" class="sticker" src="img/kyiv/kyiv_stickers/snail-kiev.png">
+                        <img id="lorem" class="sticker" src="img/kyiv/kyiv_stickers/lorem.png">
+                        <img id="cake-kiev" class="sticker" src="img/kyiv/kyiv_stickers/cake-kiev.png">
+                        <img id="candy-vecherniy-kiev" class="sticker" src="img/kyiv/kyiv_stickers/candy-vecherniy-kiev.png">
+                        <img id="perepichka-kiev" class="sticker" src="img/kyiv/kyiv_stickers/perepichka-kiev.png">
+                    </div>
+                </td>
+                <td id="kyiv_form" class="city-form">
+                    <img id="kyiv_main_image" src="img/kyiv/kyiv_form/main_img.png">
+                    <img id="kyiv_icon" src="img/kyiv/kyiv_form/kiev-logo.png">
+                    <form id="kyiv-form">
+                        <p id="kyiv_head"><img src="img/kyiv/kyiv_form/Kyiv Stickers.png"></p>
+                        <p id="kyiv_text"><img src="img/kyiv/kyiv_form/Lorem ipsum dolor sit amet.png"></p>
+                        <button id="kyiv-app-store" class="app-store-download-button"></button>
+                        <button id="kyiv-telegram" class="telegram-download-button"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr id="page_3" class="city-page">
+                <td id="ny_list" class="city-list">
+                    <div id="button_list_ny" class="button-list">
+                        <p ng-click="jumpToPage(1)"><img src="img/ny/left_list/Odessa.png"></p>
+                        <img src="img/ny/left_list/line.png">
+                        <p ng-click="jumpToPage(2)"><img src="img/ny/left_list/Kyiv.png"></p>
+                        <img src="img/ny/left_list/down_line.png">
+                        <p><img src="img/ny/left_list/New_York.png"></p>
+                    </div>
+                </td>
+                <td id="ny_phone" class="city-phone">
+                    <div id="ny_stickers">
+                        <img id="statue-of-liberty" class="sticker" src="img/ny/ny_stickers/statue-of-liberty-nyc.png">
+                        <img id="rockefeller-center" class="sticker" src="img/ny/ny_stickers/rockefeller-center.png">
+                        <img id="high-line" class="sticker" src="img/ny/ny_stickers/the-high-line-nyc.png">                        
+                        <img id="lorem_ny" class="sticker" src="img/ny/ny_stickers/lorem.png">
+                        <img id="madame-tussaude" class="sticker" src="img/ny/ny_stickers/madame-tussaude.png">
+                        
+                    </div>
+                </td>
+                <td id="ny_form" class="city-form">
+                    <img id="ny_main_image" src="img/ny/ny_form/main_img.png">
+                    <img id="ny_icon" src="img/ny/ny_form/ny-icon.png">
+                    <form id="ny-form">
+                        <p id="ny_head"><img src="img/ny/ny_form/NY_header.png"></p>
+                        <p id="ny_text"><img src="img/ny/ny_form/text.png"></p>
+                        <button id="ny-app-store" class="app-store-download-button"></button>
+                        <button id="ny-telegram" class="telegram-download-button"></button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div id="page_4" class="suggest-page">
+            <h3><img src="img/suggest/Suggest_head.png"></h3>
+            <p><img src="img/suggest/choose.png"></p>
+             <div id="pic_carusel" ng-mouseover="stopCarusel()" ng-mouseleave="carusel()">
+                 <div id="carusel_list">
+                     <img src="img/suggest/ny.png" class="carusel-img" ng-click="jumpToPage(3)">
+                     <img src="img/suggest/odessa.png" class="carusel-img" ng-click="jumpToPage(1)">
+                     <img src="img/suggest/kiev.png" class="carusel-img" ng-click="jumpToPage(2)">
+                     <img src="img/suggest/ny.png" class="carusel-img" ng-click="jumpToPage(3)">
+                     <img src="img/suggest/odessa.png" class="carusel-img" ng-click="jumpToPage(1)">
+                     <img src="img/suggest/kiev.png" class="carusel-img" ng-click="jumpToPage(2)">
+                     <img src="img/suggest/ny.png" class="carusel-img" ng-click="jumpToPage(3)">
+                 </div>
+             </div>
+            <table id="suggest_table">
+                <tr>
+                    <td></td>
+                    <td class="form-td">
+                        <form class="suggest-form">
+                            <input value="Suggest new stickers" class="suggest-form-elem">
+                            <button id="f_suggest" class="suggest-button">Suggest</button>
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="form_td">
+                        <form class="suggest-form">
+                            <input value="Offer a new sticker pack" class="suggest-form-elem">
+                            <input value="Suggest new stickers" class="suggest-form-elem">
+                            <button id="s_suggest" class="suggest-button">Suggest</button>
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="social_nets">
+                <a href="https://www.google.com.ua" class="suggest-pics"><img src="img/suggest/google.png"></a>
+                <a href="https://www.facebook.com"  class="suggest-pics"><img src="img/suggest/fb.png"></a>
+                <a href="https://twitter.com" class="suggest-pics"><img src="img/suggest/twitt.png"></a>
+            </div>
+            <p><img src="img/suggest/copyright.png"></p>
+        </div>
+        <div id="footer_div"></div>
+    </div>
+    <script src="js/init.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+

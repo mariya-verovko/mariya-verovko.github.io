@@ -1,0 +1,335 @@
+﻿body {
+    background: url(img/bg.png) no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+    overflow: scroll;
+}
+
+button#menu {
+    background: url("img/menu.png") no-repeat;
+    background-size: 100%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+#background_phone {
+    background: url("img/phone_corpus.png") no-repeat;
+    background-size:100% 100%;
+    height: 100%;
+    width: 485px;
+    position: fixed;
+    left: 110px;
+    top: -10%;
+}
+
+#logo_sticker {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+#data_table {
+    position: relative;
+    width: 100%;
+}
+
+.city-list {
+    width: 140px;
+    min-width: 140px;
+}
+
+.button-list {
+    text-align:center;
+    margin:0 0 0 -20px;
+}
+
+    .button-list p {
+        margin: 0;
+    }
+
+
+.city-phone {
+    width: 450px;
+    min-width: 450px;
+    min-height: 100%;
+}
+
+#odessa_phone {
+    background: url("img/odessa/screen.png") no-repeat;
+    background-size: 410px 89%;
+}
+
+#kyiv_phone {
+    background: url("img/kyiv/screen.png") no-repeat;
+    background-size: 410px 89%;
+}
+
+#ny_phone {
+    background: url("img/ny/screen.png") no-repeat;
+    background-size: 410px 89%;
+}
+
+
+#odessa_main_image {
+    position: relative;
+    left: 10%;
+}
+
+#kyiv_main_image {
+    width: 96%;
+    height: 65%;
+    margin: 0 0 0 20px;
+}
+
+#ny_main_image {
+    position: relative;
+    left: -20%;
+    z-index: -1;
+}
+
+#odessa_icon {
+    position: relative;
+    margin: -7% 0 0 40%;
+    z-index: 3;
+
+}
+
+#kyiv_icon {
+    position: relative;
+    margin: -6% 0 0 40%;
+    z-index: 3;
+}
+
+#ny_icon {
+    position: relative;
+    margin: -5% 0 0 0;
+    z-index: 3;
+}
+
+.city-form {
+    width: 600px;
+    min-width: 600px;
+}
+
+#odessa-form {
+    background: url("img/odessa/odessa_form/form.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 310px;
+    margin: -30% 0 0 0;
+    text-align: center;
+    z-index: 2;
+}
+
+#kyiv-form {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 160px;
+    margin: -3% 0 0 20%;
+    text-align: center;
+}
+
+#ny-form {
+    background: url("img/ny/ny_form/form.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: -40% 0 0 15%;
+    text-align: center;
+    z-index: 2;
+}
+
+
+#odessa_head {
+    position: relative;
+    padding-top: 26%;
+}
+
+
+#ny_head {
+    position: relative;
+    padding-top: 26%;
+}
+
+#ny_text {
+}
+
+.app-store-download-button {
+    background: url(img/odessa/odessa_form/app_store.png) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 45px;
+    border-style: none;
+}
+
+.telegram-download-button {
+    background: url(img/odessa/odessa_form/telegram.png) no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 45px;
+    border-style: none;
+}
+
+
+.sticker {
+    position: relative;
+    display: block;
+} 
+
+#jew-odessa-sticker {
+    margin: -15% 0 0 10%;
+    z-index: 1;
+}
+
+#who-drowned-sticker {
+    margin: 0 0 0 45%;
+    z-index: 2;
+}
+
+#seagulls-odessa-sticker {
+    margin: -15% 0 0 3%;
+    z-index: 3;
+}
+
+#text-sticker {
+    margin: -30% 0 0 26%;
+    z-index: 1;
+}
+
+#seafront-odessa-sticker {
+    margin: -5% 0 0 5%;
+    z-index: 1;
+}
+
+#snail-kiev {
+    margin: -7% 0 0 40%;
+    z-index: 1;
+}
+
+#lorem {
+    margin: -2% 0 0 0;
+    z-index: 1;
+}
+
+#cake-kiev {
+    margin: -10% 0 0 42%;
+    z-index: 2;
+}
+
+#candy-vecherniy-kiev {
+    margin: -30% 0 0 0;
+    z-index: 1;
+}
+
+#perepichka-kiev {
+    margin: -15% 0 0 25%;
+    z-index: 2;
+}
+
+#statue-of-liberty {
+    margin: -25% 0 0 25%;
+    z-index: 2;
+}
+
+#rockefeller-center {
+    margin: -45% 0 0 60%;
+    z-index: 2;
+}
+
+#madame-tussaude {
+    margin: 0;
+    z-index: 2;
+}
+
+#lorem_ny {
+    margin: 0;
+    z-index: 1;
+}
+
+#high-line {
+    margin: -20% 0 0 30%;
+    z-index: 1;
+}
+
+.suggest-page {
+    text-align: center;
+}
+
+#suggest_table {
+    width:100%;
+}
+.form-td {
+    width: 33%;
+}
+
+.suggest-form {
+    text-align: center;
+}
+.suggest-form-elem {
+    display: block;
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+    padding: 3px;
+    margin: 20px 0 20px 0;
+}
+
+.suggest-button {
+    background-color: rgb(247,247,247);
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#social_nets {
+    padding: 10px 0 10px 0;
+}
+.suggest-pics {
+    margin: 10px;
+}
+
+#pic_carusel {
+    width: 100%;
+    overflow: hidden;
+}
+
+#carusel_list {
+    width: 120%;
+    transition: margin-left 500ms;
+    display: inline-flex;
+} 
+
+.carusel-img {
+    padding: 10px 40px 10px 40px;
+    display: inline-block;
+}
+#footer_div {
+    background-image: url("img/footer.png");
+    position: fixed;
+    margin: 0 0 0 110px;
+    bottom: 0;
+    height: 70px;
+    width: 485px;
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
